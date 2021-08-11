@@ -2,5 +2,36 @@
 
 
 .title {
-    background-color: pink;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size: 30px;
+    font-weight: bolder;
+}
+.title-D {
+    color: blue
+}
+.title-o1 {
+    color: red;
+}
+.title-o2 {
+    color: yellow;
+}
+.title-g {
+    color: blue;
+}
+.title-l {
+    color: green;
+}
+.title-e {
+    color: red;
+    transform: rotate(35deg);
+}
+.container {
+    display:grid;
+    color: #1f1d1d;
+    position: relative;
 }
