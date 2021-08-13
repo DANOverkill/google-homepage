@@ -1,37 +1,95 @@
-/* CSS document*/
+/* CSS document */
 
+/* Header styling --- START --- */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .title {
     display: grid;
+    width: 100%;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    left: 50%;
-    right: 50%;
+    position: inherit;
+    justify-content: center; 
+    padding-right: 3%;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 60px;
+    font-weight: 800;
+    grid-template-rows: repeat(6, 60px);
+    grid-template-areas: "D o1 o2 g l e";
+
+    
 }
 .title-D {
-    color: blue
+    color: blue;
+    grid-area: D;
 }
 .title-o1 {
     color: red;
+    grid-area: o1;
 }
 .title-o2 {
     color: yellow;
+    grid-area: o2;
 }
 .title-g {
     color: blue;
+    grid-area: g;
 }
 .title-l {
     color: green;
+    grid-area: l;
 }
 .title-e {
     color: red;
-    transform: rotate(35deg);
+    grid-area: e;
+    transform: rotate(352deg);
 }
+
+/* Header styling  --- END --- */
+
+
+/* Body styling  --- START --- */
+
 .container {
-    display:grid;
+    display:flex;
     color: #1f1d1d;
     position: relative;
+    height: 800px;
+    padding-top: 60px;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 60px;
+    bottom: 60px;
+
+   
+
 }
+
+.search-bar {
+    width: 215px;
+}
+
+.input {
+    height: 30px;
+    width: 400px;
+    
+}
+.footer {
+    font-size: 12px;
+    display: flex;
+    position:fixed;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(136, 136, 136, 0.521);
+    color: rgb(65, 65, 65);
+}
+
+
+/* Body styling  --- END --- */
